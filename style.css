@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.resume {
+    width: 100%;
+    max-width: 624px;
+    margin: 0 auto;
+    padding-top: 5em;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 640px) {
+    .resume {
+        padding-top: 3em;
+    }
+}
+
+.title {
+    display: flex;
+    gap: 1rem;
+}
+
+
+.title-text {
+    display: grid;
+    gap: .5em;
+}
+
+.title-text h1 {
+    font-size: 3.75rem;
+    line-height: 1;
+}
+
+@media (max-width: 640px) {
+    .title-text h1 {
+        font-size: 1.875rem;
+        line-height: calc(2.25 / 1.875);
+    }
+}
+
+.title-text h3 {
+    font-weight: 400;
+    max-width: 600px;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    color: #08090A;
+}
+
+@media (max-width: 640px) {
+    .title-text h3 {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+}
+
+.deep-php {
+    aspect-ratio: 1 / 1;
+    width: 110px;
+    border-radius: 100%;
+}
+
+@media (max-width: 640px) {
+    .deep-php {
+        width: 90px;
+    }
+}
+
+.about-sec, .work-experience-section, .education-section, .skills-section, .contact-section {
+    padding-top: 2em;
+}
+
+h2 {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+p {
+    color: #737373;
+    font-size: .875rem;
+    line-height: 1.25rem;
+}
+
+.company-tile-container, .education-tile-container {
+    display: grid;
+    gap: .5em;
+    padding-top: 1em;
+}
+
+.company-tile, .education-tile {
+    display: flex;
+    width: 100%;
+}
+
+.company-tile-img, .education-tile-img {
+    aspect-ratio: 1 / 1;
+    width: 46px;
+    border-radius: 100%;
+    border: 1px solid #E5E7EB;
+    flex-shrink: 0;
+}
+
+.company-tile-info-container, .education-tile-info-container {
+    margin-left: .8em;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 0;
+}
+
+.company-tile-info, .education-tile-info {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+@media (max-width: 640px) {
+    .company-tile-info, .education-tile-info {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.25rem;
+    }
+}
+
+.company-tile-info h4, .education-tile-info h4 {
+    flex: 1;
+    min-width: 0;
+}
+
+@media (max-width: 640px) {
+    .company-tile-info h4, .education-tile-info h4 {
+        font-size: 0.9rem;
+    }
+}
+
+.company-tile-info h5, .education-tile-info h5 {
+    font-size: .875rem;
+    line-height: 1.25rem;
+    color: #737373;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+@media (max-width: 640px) {
+    .company-tile-info h5, .education-tile-info h5 {
+        font-size: 0.75rem;
+    }
+}
+
+.pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .3em;
+}
+
+.pill {
+    color: #E5E7EB;
+    border-radius: 6px;
+    padding: .25em 1em;
+    font-size: .75rem;
+    line-height: 1rem;
+    background-color: #111111;
+    margin-right: .5em;
+    margin-top: .5em;
+}
+
+@media (any-hover: hover) {
+    .pill:hover {
+        background-color: #212121;
+    }
+}
+
+.big-pill {
+    font-size: .9rem;
+    line-height: 1.25rem;
+    padding: .3em 1.2em;
+    width: fit-content;
+    border-radius: 9px;
+}
+
+.contact-pill-container {
+    display: flex;
+    justify-content: center;
+}
+
+.education-tile-name span {
+    color: #606060;
+    font-size: .775rem;
+}
