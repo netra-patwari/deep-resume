@@ -1,7 +1,22 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+
+    ::selection {
+        background-color: #111111;
+        color: #E5E7EB;
+    }
+}
+
+img ::selection {
+    background-color: transparent !important;
+    color: transparent !important;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 .resume {
@@ -11,7 +26,6 @@
     padding-top: 5em;
     padding-left: 1rem;
     padding-right: 1rem;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 @media (max-width: 640px) {
@@ -32,8 +46,9 @@
 }
 
 .title-text h1 {
-    font-size: 3.75rem;
+    font-size: 3.25rem;
     line-height: 1;
+    letter-spacing: -2px;
 }
 
 @media (max-width: 640px) {
@@ -62,6 +77,7 @@
     aspect-ratio: 1 / 1;
     width: 110px;
     border-radius: 100%;
+    border: 1px solid #d1d1d1;
 }
 
 @media (max-width: 640px) {
@@ -192,4 +208,54 @@ p {
 .education-tile-name span {
     color: #606060;
     font-size: .775rem;
+}
+
+h1 {
+    display: inline-block;
+  }
+  
+  .waving-hand {
+    display: inline-block;
+    transform-origin: 70% 70%;
+  }
+  
+  h1:hover .waving-hand {
+    animation: wave 0.8s ease-in-out infinite;
+  }
+  
+  @keyframes wave {
+    0% { transform: rotate(0deg); }
+    15% { transform: rotate(14deg); }
+    30% { transform: rotate(-8deg); }
+    45% { transform: rotate(14deg); }
+    60% { transform: rotate(-4deg); }
+    75% { transform: rotate(10deg); }
+    100% { transform: rotate(0deg); }
+  }
+  
+
+.menu-bar-container {
+    position: fixed;
+    bottom: 0;
+    z-index: 99999;
+    /* background: linear-gradient(360deg,rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 1) 50%); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.4) 100%);
+
+    
+}
+
+.menu-bar {
+    display: flex;
+    border-radius: 999px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border: hwb(0 89% 11%) solid 1px;
+    padding: 1em;
+    margin-bottom: 1.4em;
+    max-width: 624px;
+
 }
